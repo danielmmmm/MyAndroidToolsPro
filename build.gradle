@@ -3,7 +3,8 @@
 buildscript {
     repositories {
         google()
-        jcenter()
+        mavenCentral()        // replaces JCenter
+        // Optional: gradlePluginPortal() if using plugins
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:8.2.0' // Requires Gradle 8.0+
@@ -16,7 +17,7 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-        jcenter()
+//        jcenter()
         maven { url 'https://dl.bintray.com/rikkaw/Shizuku/' }
     }
 }

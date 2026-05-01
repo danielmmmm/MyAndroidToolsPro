@@ -1,12 +1,13 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 28
+    namespace "cn.wq.myandroidtoolspro"
+    compileSdkVersion 32
 //    buildToolsVersion '25.0.3'
 
     defaultConfig {
-        minSdkVersion 16
-        targetSdkVersion 28
+        minSdkVersion 32
+        targetSdkVersion 32
         versionCode 3
         versionName "1.2"
     }

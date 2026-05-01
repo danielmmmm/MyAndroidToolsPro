@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="cn.wq.navigationview">
+<!-- package attribute removed - namespace is in build.gradle -->
 
     <application
         android:allowBackup="true"

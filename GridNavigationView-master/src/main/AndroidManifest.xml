@@ -1,11 +1,11 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-<!-- package attribute removed - namespace is in build.gradle -->
-
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- package attribute removed - namespace is in build.gradle -->
+    <!-- FUCKING FUCKING FUCK!!!!! FUCK THIS FUCKING DEPENDENCY AND DEPRECATED FUCKING SHIT!!!!!!!!!!!!!! -->
     <application
         android:allowBackup="true"
         android:label="@string/app_name"
         android:supportsRtl="true">
 
     </application>
-
 </manifest>

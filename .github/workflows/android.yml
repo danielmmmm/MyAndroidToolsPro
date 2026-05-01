@@ -1,6 +1,6 @@
 name: Android CI
 
-on: [push, pull_request]
+on: [workflow_dispatch]
 
 env:
   # Opt into Node.js 24 for JavaScript actions now

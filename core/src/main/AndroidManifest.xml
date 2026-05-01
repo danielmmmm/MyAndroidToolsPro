@@ -1,2 +1,13 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
     <!-- package attribute removed - namespace is in build.gradle -->
+    <!-- FUCKING FUCKING FUCK!!!!! FUCK THIS FUCKING DEPENDENCY AND DEPRECATED FUCKING SHIT!!!!!!!!!!!!!! -->
+    <!-- Optional: declare permissions if needed -->
+    <!-- <uses- permissionandroid:name="android.permission.INTERNET" /> -->
+
+    <application>
+        <!-- Library modules typically don't need application declarations -->
+        <!-- But if you have components, declare them here -->
+    </application>
+
+</manifest>

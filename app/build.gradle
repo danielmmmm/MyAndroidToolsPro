@@ -126,7 +126,7 @@ dependencies {
     implementation project(':core')
 
     implementation 'com.tencent.mars:mars-xlog:1.0.6'
-    implementation 'com.tencent.bugly:crashreport:2.8.6'
+    implementation 'com.tencent.bugly:crashreport:latest.release'
 
     implementation 'moe.shizuku.privilege:api-base:9'
     implementation 'moe.shizuku.privilege:api-26:4'

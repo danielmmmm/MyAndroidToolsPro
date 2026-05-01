@@ -1,15 +1,15 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 32
 //    buildToolsVersion '25.0.3'
     //com.android.support:design:25.2.0不支持sdk 8
     defaultConfig {
         applicationId "cn.wq.myandroidtoolspro"
-        minSdkVersion 16
-        targetSdkVersion 28
+        minSdkVersion 32
+        targetSdkVersion 32
         versionCode new Date().format("yyyyMMddHH").toInteger() //92
-        versionName "1.6.9.beta"
+        versionName "1.6.9.1b"
         multiDexEnabled true
         //https://developer.android.com/guide/topics/graphics/vector-drawable-resources
         //使用app:srcCompat兼容21以前的版本，否则编译时vector会自动生成各分辨率的png图标
@@ -19,6 +19,10 @@ android {
             abiFilters 'armeabi' , 'x86'
         }
     }
+
+    // Required for compileSdk 33+
+    namespace "cn.wq.myandroidtoolspro"
+
     lintOptions {
         disable 'MissingTranslation'
     }

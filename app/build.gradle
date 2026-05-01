@@ -1,6 +1,8 @@
 apply plugin: 'com.android.application'
 
 android {
+    // Required for compileSdk 33+
+    namespace "cn.wq.myandroidtoolspro"
     compileSdkVersion 32
 //    buildToolsVersion '25.0.3'
     //com.android.support:design:25.2.0不支持sdk 8
@@ -20,8 +22,10 @@ android {
         }
     }
 
-    // Required for compileSdk 33+
-    namespace "cn.wq.myandroidtoolspro"
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
 
     lintOptions {
         disable 'MissingTranslation'
@@ -114,6 +118,9 @@ dependencies {
     compileOnly 'com.android.support:recyclerview-v7:28.0.0'
     implementation 'com.android.support:design:28.0.0'
     implementation 'com.android.support:multidex:1.0.3'
+
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
 
     compileOnly project(':GridNavigationView-master')
     implementation project(':core')

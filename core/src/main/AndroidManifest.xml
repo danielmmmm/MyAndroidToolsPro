@@ -1,2 +1,2 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="cn.wq.myandroidtoolspro.core" />
+    <!-- package attribute removed - namespace is in build.gradle -->

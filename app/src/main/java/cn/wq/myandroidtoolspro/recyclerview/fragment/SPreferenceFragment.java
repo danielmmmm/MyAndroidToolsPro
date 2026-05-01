@@ -309,9 +309,10 @@ public class SPreferenceFragment extends RecyclerWithToolbarFragment {
                         serializer.endTag(null, ATTRIBUTE_NAME_STRING);
                     }
                 } else if ("string".equals(entry.type)) {
-                    serializer.startTag(null, ATTRIBUTE_NAME_STRING);
+// fix XML serialization bug that injects a new child <string> node into the text value instead of just replacing the text content
+//                    serializer.startTag(null, ATTRIBUTE_NAME_STRING);
                     serializer.text(entry.value);
-                    serializer.endTag(null, ATTRIBUTE_NAME_STRING);
+//                    serializer.endTag(null, ATTRIBUTE_NAME_STRING);
                 } else {
                     serializer.attribute(null, "value", entry.value);
                 }
